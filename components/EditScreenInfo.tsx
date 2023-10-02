@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { Alert, Button, StyleSheet } from 'react-native';
 
 import Colors from '../constants/Colors';
 import { ExternalLink } from './ExternalLink';
@@ -42,6 +42,8 @@ export default function EditScreenInfo({ path }: { path: string }) {
           </Text>
         </ExternalLink>
       </View>
+
+      <Button onPress={() => { Alert.alert('You tapped the button!'); }} title="Press Me" />
     </View>
   );
 }
